@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input,
+        button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        p {
+            text-align: left;
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lyrics Finder</h1>
+        <form id="lyricsForm">
+            <input type="text" id="artist" placeholder="Artist" required />
+            <input type="text" id="song" placeholder="Song" required />
+            <button type="submit">Get Lyrics</button>
+        </form>
+        <p id="lyrics"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
